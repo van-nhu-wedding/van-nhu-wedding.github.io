@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đám Cưới</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer=""></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="main" style="display: none;">
+    <div class="main-content bia-thu" id="view-bia-thu" style="z-index: 4;">
+      <div class="bia-thu-body">
+        <div class="bia-thu-content" id="bia-thu-content">
+          <img class="hoa-anh-dao_01" src="./img/hoa_anh_dao_01.png" alt="">
+          <div class="top-cdcr">
+            <img src="./img/img_01.png" alt="">
+            <div class="top-friend-name">
+              KÍNH MỜI: <span id="friend-display-name">AAAAA</span>
+            </div>
+          </div>
+          <div class="bia-thu-name">
+            <p>Hải Vân</p>
+            &
+            <p>Huỳnh Như</p>
+          </div>
+          <div id="bia-thu-btn" class="bia-thu-btn">
+            <div class="detail-btn-arrow-top">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content top" id="view-sub-bia-thu" style="z-index: 3;">
+      <div class="top-body">
+        <img class="hoa-anh-dao" src="./img/hoa_anh_dao.png" alt="">
+        <div class="top-content">
+          <p class="top-cdcr__name">Hải<br>Vân</p>
+          <img src="./img/logo_hi.png" alt="">
+          <p class="top-cdcr__name">Huỳnh<br>Như</p>
+        </div>
+        <div class="top-slogan">
+          Trăm năm hạnh phúc,<br>ngàn năm bên nhau.
+        </div>
+      </div>
+      <div id="top-btn" class="bia-thu-btn">
+        <div class="detail-btn-arrow-top">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="main-content detail" id="view-detail"  style="z-index: 2;">
+      <div class="detail-body">
+        <div class="detail-timer">
+          <p class="detail-timer__ttl">Mình cùng nhau đếm ngược</p>
+          <div class="detail-timer-content">
+            <div class="detail-timer-content-item">
+              <p class="detail-timer-content-item__num" id="detail-time-d">1</p>
+              <p class="detail-timer-content-item__txt">Ngày</p>
+            </div>
+            <div class="detail-timer-content-item">
+              <p class="detail-timer-content-item__num" id="detail-time-h">1</p>
+              <p class="detail-timer-content-item__txt">Giờ</p>
+            </div>
+            <div class="detail-timer-content-item">
+              <p class="detail-timer-content-item__num" id="detail-time-m">1</p>
+              <p class="detail-timer-content-item__txt">Phút</p>
+            </div>
+            <div class="detail-timer-content-item">
+              <p class="detail-timer-content-item__num" id="detail-time-s">1</p>
+              <p class="detail-timer-content-item__txt">Giây</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail-content">
+          <p class="detail__ttl">TRÂN TRỌNG KÍNH MỜI</p>
+          <p class="detail__sub">ĐẾN DỰ BỮA TIỆC THÂN MẬT CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI</p>
+          <div class="detail__name"><p>Hải Vân</p><span>&</span><p>Huỳnh Như</p></div>
+          <div class="detail-calendar">
+            <p>VÀO LÚC<br>11:00</p>
+            <p>CHỦ NHẬT<br><span>01</span></p>
+            <p>THÁNG 05<br>2022</p>
+          </div>
+          <div class="detail-calendar__sub"><i>(Tức ngày 01 tháng 04 âm lịch)</i></div>
+          <div class="detail-location">TẠI: Số 65, Võ Thị Sáu, Phường 8,<br>TP Bạc Liêu, Tỉnh Bạc Liêu</div>
+          <div class="detail-calendar__sub detail-calendar__sub--highlight"><i>Sự hiện diện của quý khách<br>là niềm vinh hạnh cho gia đình chúng tôi.</i></div>
+        </div>
+        <div class="detail-border"></div>
+      </div>
+      <div class="detail-btn" id="detail-btn">
+        <div class="detail-btn-arrow-bottom">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="detail-btn-arrow-top">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="main-content gallery" id="view-gallery"  style="z-index: 1;display: none;">
+      <div class="gallery-content">
+        <img src="./img/gallery_01.jpeg" alt="" class="gallery_background">
+        <img src="./img/gallery_01.jpeg" alt="" class="gallery__img">
+      </div>
+    </div>
+  </div>
+  <script src="./script.js" defer></script>
+</body>
+</html>
