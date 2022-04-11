@@ -6,29 +6,33 @@
       id: "XN9GWGWJ"
     },
     {
-      name: "BẠN THỊ NHI (+)",
-      id: "PTHBV3RX"
-    },
-    {
-      name: "Anh Đức",
+      name: "Anh Đức (VietIS)",
       id: "N3W3ABFP"
     },
     {
-      name: "Em Thái Văn Dúi",
-      id: "QUT47K9J"
+      name: "Hậu (VietIS)",
+      id: "ASJDODDI"
     },
     {
-      name: "Em Bản",
-      id: "VJ7JLANV"
+      name: "Bách (VietIS)",
+      id: "FIASLDDG"
     },
     {
-      name: "Gia đình bạn Béo",
-      id: "EVKRZAJD"
+      name: "Huy (VietIS)",
+      id: "UENSLFS"
     },
     {
-      name: "Bạn Min (+)",
-      id: "9UQS6B5C"
-    }
+      name: "Mai (VietIS)",
+      id: "UDI9LSN"
+    },
+    {
+      name: "A.Tân (VietIS)",
+      id: "UDIOOJ"
+    },
+    {
+      name: "Linh (VietIS)",
+      id: "OOHDJK"
+    },
   ]
 
   var mFriend = FRIENDS.find(x => x.id === friendId);
@@ -65,10 +69,10 @@
   var viewBiaThu = $("#view-bia-thu");
   var viewSubBiaThu = $("#view-sub-bia-thu");
   var viewDetail = $("#view-detail");
-  var viewGallery = $("#view-gallery");
+  var viewDonate = $("#view-donate");
 
-  biathuContent.height($(window).height());
-  biathuContent.width($(window).width()-45);
+  biathuContent.height(viewBiaThu.height());
+  biathuContent.width(viewBiaThu.width()-45);
 
   biathuBtn.click(function() {
     changeMode(MODE.SUBBIATHU);
@@ -114,9 +118,10 @@
           viewDetail.css("height", "100%");
           viewDetail.css("transform", "translateX(0) rotate(0)");
           viewDetail.css("z-index", "4");
-          viewGallery.css("z-index", "3");
+          viewDetail.css("border-radius", "0");
+          viewDonate.css("z-index", "3");
           setTimeout(function() {
-            viewGallery.show();
+            viewDonate.show();
           }, 1000)
         }, 1000);
       }
