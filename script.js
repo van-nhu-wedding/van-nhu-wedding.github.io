@@ -2,6 +2,10 @@
   var friendId = getUrlParameter('f');
   var FRIENDS = [
     {
+      name: "Gia Đình A.Tân",
+      id: "KKOH8SHD"
+    },
+    {
       name: "Gia Đình A.Tiến",
       id: "XN9GWGWJ"
     },
