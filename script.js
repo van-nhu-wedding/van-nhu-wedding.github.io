@@ -54,6 +54,23 @@
     GALLERY: "GALLERY",
   }
 
+  var viewBiaThu = $("#view-bia-thu");
+  var viewSubBiaThu = $("#view-sub-bia-thu");
+  var viewDetail = $("#view-detail");
+  var viewDonate = $("#view-donate");
+
+  var bodyHeight = $("body").height();
+
+  if (bodyHeight <= 710 && bodyHeight > 675) {
+    viewDetail.find('.detail-body').css("font-size", "9,5px");
+  } else if (bodyHeight <= 675 && bodyHeight > 640) {
+    viewDetail.find('.detail-body').css("font-size", "9px");
+  } else if (bodyHeight <= 640 && bodyHeight > 620) {
+    viewDetail.find('.detail-body').css("font-size", "9,5px");
+  } else if (bodyHeight <= 620) {
+    viewDetail.find('.detail-body').css("font-size", "8px");
+  }
+
   var currentMode = MODE.BIATHU;
   var preMode = false;
   var biathuContent = $("#bia-thu-content");
@@ -62,18 +79,13 @@
   var topBtn = $("#top-btn");
 
   let currentDate = new Date()
-  let startDate = new Date("2022-05-01T11:00:00+0700");
+  let startDate = new Date("2022-05-01T11:00:00+07:00");
   let seconds = Math.round((startDate.getTime() - currentDate.getTime()) / 1000);
 
   var detailTimeDay = $("#detail-time-d");
   var detailTimeHour = $("#detail-time-h");
   var detailTimeMinute = $("#detail-time-m");
   var detailTimeSecond = $("#detail-time-s");
-
-  var viewBiaThu = $("#view-bia-thu");
-  var viewSubBiaThu = $("#view-sub-bia-thu");
-  var viewDetail = $("#view-detail");
-  var viewDonate = $("#view-donate");
 
   biathuContent.height(viewBiaThu.height());
   biathuContent.width(viewBiaThu.width()-45);
